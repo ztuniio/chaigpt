@@ -1,55 +1,44 @@
-# ChaiGPT Cafe & Restaurant — Website
+# ChaiGPT Cafe & Restaurant Website
 
-The website for ChaiGPT Cafe & Restaurant, Jamshoro, split into normal project files.
+A responsive website for **ChaiGPT Cafe & Restaurant** in Phase-I, Jamshoro, Pakistan. It showcases the menu, the atmosphere, and visiting details for a cafe serving chai, pizza, burgers, broast, karahi, and fish, open daily from 5 PM to 3 AM.
 
-## What's in this folder
+## Features
+
+- **Tabbed menu** to browse dishes by category
+- **Photo gallery** with a full-screen viewer, plus a full-menu image modal
+- **Scroll animations** that reveal sections as you move down the page
+- **Mobile-friendly navigation** with a responsive layout for phones, tablets, and desktops
+- **Zero dependencies**: plain HTML, CSS, and JavaScript, no build step
+
+## Tech stack
+
+- HTML5
+- CSS3 (custom properties for colors, fonts, and spacing)
+- Vanilla JavaScript
+- Google Fonts (Fraunces, Caveat, Figtree)
+
+## Project structure
 
 ```
-index.html      the page structure
-styles.css      all styling
-script.js       nav, menu tabs, scroll animations, gallery/menu modal
-assets/         every photo and the logo used on the site
-README.md       this file
+index.html   page structure and content
+styles.css   all styling (theme variables at the top)
+script.js    navigation, menu tabs, scroll animations, modals
+assets/      photos and logo
 ```
 
-Open `index.html` in a browser and the site runs locally exactly as it does live — no build step, no install, no dependencies.
+## Run locally
 
-## Put it live on GitHub Pages (free hosting)
+Clone the repository and open `index.html` in your browser:
 
-1. **Create a repository**
-   Go to [github.com/new](https://github.com/new), name it (e.g. `chaigpt-website`), and create it (public repos get free GitHub Pages hosting).
+```bash
+git clone https://github.com/ztuniio/chaigpt.git
+cd chaigpt
+```
 
-2. **Upload everything**
-   On the repo's main page, click **"Add file" → "Upload files"**, then drag in `index.html`, `styles.css`, `script.js`, and the whole `assets` folder together, keeping this same structure. Commit to the `main` branch.
-   *(The `assets` folder and its contents must stay named exactly as they are — `index.html`, `styles.css`, and `script.js` all reference those file paths directly.)*
+## Deployment
 
-3. **Turn on GitHub Pages**
-   Go to **Settings → Pages** (left sidebar). Under "Build and deployment", set:
-   - Source: **Deploy from a branch**
-   - Branch: **main**, folder **/ (root)**
+The site is fully static and can be hosted on GitHub Pages, Vercel, or Netlify. For GitHub Pages: **Settings → Pages → Deploy from a branch → `main` / root**.
 
-   Click **Save**.
+## Author
 
-4. **Visit your site**
-   After a minute or two, GitHub will show a link like:
-   `https://yourusername.github.io/chaigpt-website/`
-   That's your live website.
-
-## Using your own domain (optional)
-
-If you own a domain (e.g. `chaigpt.pk`):
-1. In **Settings → Pages**, enter it under "Custom domain" and save.
-2. At your domain registrar, add a `CNAME` record pointing to `yourusername.github.io`.
-3. Wait for DNS to propagate (can take a few hours), then check "Enforce HTTPS" once it's available.
-
-## Making future edits
-
-- **Text or price changes**: edit `index.html` directly on GitHub (pencil ✎ icon) — menu items, hours, and copy all live in plain HTML.
-- **Colors, fonts, spacing**: all in `styles.css`, controlled mostly by the CSS variables at the very top of the file.
-- **A new photo**: add the image file into `assets/`, then point the relevant `<img src="assets/your-file.jpg">` at it in `index.html`.
-- **Bigger changes**: easiest to come back here and ask Claude, then re-upload the changed files the same way (Step 2 above) to overwrite the old ones.
-
-## Notes
-
-- Fonts (Fraunces, Caveat, Figtree) load from Google Fonts over the internet automatically once the site is live — no setup needed.
-- Everything is plain HTML/CSS/JavaScript with no framework and no external services beyond Google Fonts, so it will keep working indefinitely with no maintenance.
+Built by [Zaid](https://github.com/ztuniio).
